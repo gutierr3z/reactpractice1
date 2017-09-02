@@ -21,7 +21,7 @@ app.use( webpackDevMiddleware( compiler, {
 const server = app.listen( 3000, function() {
     const host = server.address().address;
     const prot = server.address().port;
-    console.log( 'Example app listening at XXX' );
+    console.log( 'Example app listening at http://%s:%s', host, post );
 });
 
 
